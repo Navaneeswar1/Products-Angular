@@ -6,11 +6,11 @@
    npm install -g @angular/cli
 ** **
     cd products-store
-2. **Install Dependencies**
+2. **Install node_modules**
     ```sh
    npm install
    
-3. **Start the Development Server**
+3. **Start the Application**
     ```sh
     ng serve
     
