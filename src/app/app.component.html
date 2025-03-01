@@ -1,0 +1,35 @@
+<nav class="nav">
+  <ul class="nav-links">
+    <li>
+      <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/cart"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+      >
+        Cart
+        <span class="cart-icon">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAABDUlEQVR4nL3Vr0sEQRQA4NXgFbGYDCY9BJNVtGs2mhTlTDYv+ydc8A8QQdSm1wUVrCImm3IWTQaLcOWTgQ3LodzO7K0PXpiBmQ/emx9Z9h+BO/QL+YVrzI8SucVNYTyBfdyPDPktMI5XNLM6A8fYqRvZxkndyBx6tSIh8r4cop2Yw8sdyjVwvPuR+VQG2a2IHJRBmhWAb8wMRXKol4h0SwE5cpqIbMQgrQTgA40YZCEB6ZQGKvRlKQU5iwAeo4Ec2YtAWqnIIp6TFkcgY3jDbN1QB0eYrBOZxkOJnrxH3ZE/nv5lrBR7hE1cYgpX2KqKBGAVL4X58IuGzQPSrYqsh83zXCvMN3CBT5wPlusH7Uppcbq/7rkAAAAASUVORK5CYII="
+          />
+          <sup>{{ cartCount }}</sup>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/profile"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+      >
+        Profile
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

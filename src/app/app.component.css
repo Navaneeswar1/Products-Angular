@@ -1,0 +1,49 @@
+.nav {
+  background-color: #333;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.cart-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.cart-icon sup {
+  font-size: 14px;
+  color: yellow;
+}

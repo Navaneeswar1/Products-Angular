@@ -1,0 +1,22 @@
+<div class="category-container">
+  <h2>All Categories</h2>
+  <div
+    *ngFor="let category of categories"
+    class="category"
+    (click)="onCategorySelect(category)"
+  >
+    {{ category }}
+  </div>
+</div>
+
+<div class="product-list" *ngIf="products && products.length > 0">
+  <h2>Products</h2>
+  <div *ngFor="let product of products" class="product-card">
+    <h3>{{ product.title }}</h3>
+    <img [src]="product.image" alt="{{ product.title }}" width="150" />
+    <p>${{ product.price }}</p>
+    <a [routerLink]="['/product', product.id]" routerLinkActive="active"
+      >View Details</a
+    >
+  </div>
+</div>
