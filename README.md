@@ -5,7 +5,7 @@
     ```sh
    npm install -g @angular/cli
 ** **
-    cd products-store
+    cd products-angular-main
 2. **Install node_modules**
     ```sh
    npm install
